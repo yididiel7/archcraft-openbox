@@ -135,7 +135,7 @@
         <menu>app-menu</menu>
       </action>
     </keybind>
-    <!-- Action : NextWindow -->
+    <!-- Action : {Next,Previous}Window -->
     <keybind key="W-Tab">
       <action name="NextWindow">
         <dialog>list</dialog>
@@ -153,8 +153,42 @@
         </finalactions>
       </action>
     </keybind>
+    <keybind key="W-S-Tab">
+      <action name="PreviousWindow">
+        <dialog>list</dialog>
+        <bar>no</bar>
+        <raise>yes</raise>
+        <allDesktops>yes</allDesktops>
+        <panels>no</panels>
+        <desktop>no</desktop>
+        <linear>no</linear>
+        <interactive>yes</interactive>
+        <finalactions>
+          <action name="Focus"/>
+          <action name="Raise"/>
+          <action name="Unshade"/>
+        </finalactions>
+      </action>
+    </keybind>
     <keybind key="A-Tab">
       <action name="NextWindow">
+        <dialog>list</dialog>
+        <bar>no</bar>
+        <raise>yes</raise>
+        <allDesktops>no</allDesktops>
+        <panels>no</panels>
+        <desktop>no</desktop>
+        <linear>no</linear>
+        <interactive>yes</interactive>
+        <finalactions>
+          <action name="Focus"/>
+          <action name="Raise"/>
+          <action name="Unshade"/>
+        </finalactions>
+      </action>
+    </keybind>
+    <keybind key="A-S-Tab">
+      <action name="PreviousWindow">
         <dialog>list</dialog>
         <bar>no</bar>
         <raise>yes</raise>
