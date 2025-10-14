@@ -745,6 +745,7 @@
     <keybind key="W-m">
       <action name="Execute">
         <command>rofi-music</command>
+<!-- <command>rofi-spotify</command> -->
       </action>
     </keybind>
     <keybind key="W-x">
